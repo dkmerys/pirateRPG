@@ -34,12 +34,12 @@ ESLint
 
 ### Specs
 [] Creation of different characters
-   [] character has name.
-   [] character has notority.
-   [] character has hit points.
-   [] character has notority level.
-   [] character has reputation level.
-   [] character has rank that starts out at as cabin person. 
+   [x] character has name.
+   [x] character has notoriety.
+   [x] character has hit points.
+   [x] character has notoriety level.
+   [x] character has reputation level.
+   [x] character has rank that starts out at as deck hand. 
 [] Level up integration based on XP amount. 
    [] character has rank that changes as you level up.
    [] character stats (hp,strength ext) will increase with each level up.

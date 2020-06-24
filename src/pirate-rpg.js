@@ -12,9 +12,9 @@ export const returnState = () => {
     ...state  
   })
 }
-const character1 = storeState({name: "Jack"})
-const characterName = returnState()
-const giveName = character1(characterName)
+const character1 = storeState({name: "Jack", hp: 10, rank: "Deck Hand", notoriety: 0, infamy: 0, level: 0})
+const characterStats = returnState()
+const giveStats = character1(characterStats)
 
 
 
