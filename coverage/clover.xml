@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1593024528029" clover="3.2.0">
-  <project timestamp="1593024528030" name="All files">
-    <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="15" coveredelements="15" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+<coverage generated="1593036737888" clover="3.2.0">
+  <project timestamp="1593036737888" name="All files">
+    <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7" elements="25" coveredelements="25" complexity="0" loc="18" ncloc="18" packages="1" files="1" classes="1"/>
     <file name="pirate-rpg.js" path="/Users/Dan/Desktop/epicodus-projects/pirateRPG/src/pirate-rpg.js">
-      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7"/>
       <line num="1" count="1" type="stmt"/>
-      <line num="2" count="3" type="stmt"/>
-      <line num="3" count="3" type="stmt"/>
-      <line num="4" count="3" type="stmt"/>
-      <line num="5" count="3" type="stmt"/>
-      <line num="6" count="3" type="stmt"/>
-      <line num="10" count="1" type="stmt"/>
-      <line num="11" count="3" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
-      <line num="16" count="1" type="stmt"/>
+      <line num="2" count="4" type="stmt"/>
+      <line num="3" count="4" type="stmt"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="5" count="5" type="stmt"/>
+      <line num="6" count="5" type="stmt"/>
+      <line num="7" count="5" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
       <line num="17" count="1" type="stmt"/>
+      <line num="18" count="4" type="stmt"/>
+      <line num="19" count="4" type="stmt"/>
+      <line num="20" count="4" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
+      <line num="30" count="1" type="stmt"/>
+      <line num="31" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

@@ -1,5 +1,6 @@
  export  const storeState = (initalState) => {
-  let currentState = initalState;
+   let currentState = initalState;
+   console.log(initalState);
   return (characterFunction) => {
     const newState = characterFunction(currentState);
     currentState = { ...newState };
@@ -12,9 +13,22 @@ export const returnState = () => {
     ...state  
   })
 }
-const character1 = storeState({name: "Jack", hp: 10, rank: "Deck Hand", notoriety: 0, infamy: 0, level: 0})
-const characterStats = returnState()
-const giveStats = character1(characterStats)
+
+export const changeString = (prop) => {
+  console.log(prop);
+  return (value) => {
+    return (state) => ({
+      ...state,
+      [prop]: value
+    })
+  }
+}
+
+export let character1 = storeState({ name: "", hp: 10, xp: 0, rank: "Deck Hand", notoriety: 0, infamy: 0, level: 0 })
+console.log(storeState);
+let characterStats = returnState()
+let giveStats = character1(characterStats);
+let changeName = changeString()();
 
 
 
