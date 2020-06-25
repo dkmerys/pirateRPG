@@ -1,4 +1,4 @@
-import { storeState, character1, returnState, changeString, changeNumber } from './../src/pirate-rpg.js';
+import { storeState, character1, returnState, changeString, changeNumber, adjustXP, changeLevel, levelUp } from './../src/pirate-rpg.js';
 
 describe('character', () => {
   
@@ -18,33 +18,34 @@ describe('character', () => {
 
   test('should change the name of a character', () => { 
     let changeName = changeString("name")("William");
-    console.log(changeName);
     let giveStats = character1(changeName);
     expect(giveStats).toEqual({ name: "William", hp: 10, xp: 0, rank: "Deck Hand", notoriety: 0, infamy: 0, level: 0 });
-    console.log(giveStats);
   });
   
   test('should change the name of a character again', () => { 
     let changeName = changeString("name")("Bill");
-    console.log(changeName);
     let giveStats = character1(changeName);
-    console.log(giveStats);
     expect(giveStats).toEqual({ name: "Bill", hp: 10, xp: 0, rank: "Deck Hand", notoriety: 0, infamy: 0, level: 0 });
   });
 
   test('should change the rank of a character', () => {
     let changeRank = changeString('rank')('Gunner');
-    console.log(changeRank);
     let giveStats = character1(changeRank);
     expect(giveStats).toEqual({ name: "Bill", hp: 10, xp: 0, rank: "Gunner", notoriety: 0, infamy: 0, level: 0 });
   });
 
   test('should increment xp by 1', () => {
-    let getXP = changeNumber("xp")(1);
+    let getXP = changeNumber("xp")(10); 
     let giveStats = character1(getXP);
-    expect(giveStats).toEqual({ name: "Bill", hp: 10, xp: 1, rank: "Gunner", notoriety: 0, infamy: 0, level: 0 });
+    expect(giveStats).toEqual({ name: "Bill", hp: 10, xp: 10, rank: "Gunner", notoriety: 0, infamy: 0, level: 0 });
   });
 
-  test('should increase')
+  test('should increase level by 1 when xp reaches 10', () => {
+    let character1 = storeState({ name: "Jack", hp: 10, xp: 10, rank: "Deck Hand", notoriety: 0, infamy: 0, level: 0 });
+    let giveStats = changeLevel(character1); 
+    console.log(character1);
+    console.log(giveStats);
+    expect(giveStats).toEqual(true);
+  });
   
 });
