@@ -26,29 +26,7 @@ export const changeString = (prop) => {
 
 export let character1 = storeState({ name: "", hp: 10, xp: 0, rank: "Deck Hand", notoriety: 0, infamy: 0, level: 0 })
 console.log(storeState);
-let characterStats = returnState()
+let characterStats = returnState();
 let giveStats = character1(characterStats);
 let changeName = changeString()();
-
-
-
-// $(document).ready(function () {
-//   $("form#form1").submit(function(event)) {
-
-//   }
-// })
-/*
-(someFunc) => {
-    const newState = someFunc({name: "Jack"});
-    currentState = { ...newState };
-    return newState;
-    
-  };
-
-  [1,2,3].map(function(element) {
-    console.log(element)
-    return element + 5
-  })
-  
-*/
 
