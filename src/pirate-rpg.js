@@ -24,6 +24,15 @@ export const changeString = (prop) => {
   }
 }
 
+export const changeNumber = (prop) => {
+  return (value) => {
+    return (state) => ({
+      ...state, 
+      [prop] : (state[prop] || 0) + value
+    })
+  }
+}
+
 export let character1 = storeState({ name: "", hp: 10, xp: 0, rank: "Deck Hand", notoriety: 0, infamy: 0, level: 0 })
 console.log(storeState);
 let characterStats = returnState();

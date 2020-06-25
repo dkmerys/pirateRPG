@@ -1,4 +1,4 @@
-import { storeState, character1, returnState, changeString } from './../src/pirate-rpg.js';
+import { storeState, character1, returnState, changeString, changeNumber } from './../src/pirate-rpg.js';
 
 describe('character', () => {
   
@@ -38,5 +38,13 @@ describe('character', () => {
     let giveStats = character1(changeRank);
     expect(giveStats).toEqual({ name: "Bill", hp: 10, xp: 0, rank: "Gunner", notoriety: 0, infamy: 0, level: 0 });
   });
+
+  test('should increment xp by 1', () => {
+    let getXP = changeNumber("xp")(1);
+    let giveStats = character1(getXP);
+    expect(giveStats).toEqual({ name: "Bill", hp: 10, xp: 1, rank: "Gunner", notoriety: 0, infamy: 0, level: 0 });
+  });
+
+  test('should increase')
   
 });

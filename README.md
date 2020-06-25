@@ -40,7 +40,7 @@ ESLint
    [x] character has notoriety level.
    [x] character has reputation level.
    [x] character has rank that starts out at as deck hand. 
-   [] character has xp
+   [x] character has xp
 [] Level up integration based on XP amount. 
    [] character has rank that changes as you level up.
    [] character stats (hp,strength ext) will increase with each level up.
